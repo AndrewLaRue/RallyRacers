@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Rally Racers</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.0-beta1 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row text-center text-light bg-dark">
+      <div class="col-12">
+        <h1>🏎️ ~ Rally Racers ~ 🏎️</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <button class="btn btn-success rounded" onclick="app.raceController.start()">Start</button>
+
+        <button class="btn btn-danger" onclick="app.raceController.reset()">Reset</button>
+      </div>
+      <div class="col-12 rounded bg-secondary border border-dark border-5">
+        <div id="racers" class="row p-3">
+          <!-- <div class="col-12 bg-light border border-dark border-2 rounded">🐴</div> -->
+        </div>
+      </div>
+    </div>
+    <div class="row pt-1">
+      <div class="col-6 offset-3">
+        <div class="row text-center">
+          <div class="col-4 offset-4">
+            <h1>Winner<br> <span id="winner"></span> </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-fluid trans fixed-bottom text-center text-light no-select">
+    <div class="row text-center text-align align-items-center align-items-end">
+      <div id="fox" title="Coins: 0" class="col-2" style="font-size: 50px;">🦊</div>
+      <div id="dog" title="Coins: 0" class="col-2" style="font-size: 50px;">🐶</div>
+      <div id="cat" title="Coins: 0" class="col-2 offset-4" style="font-size: 50px;">😾</div>
+      <div id="horse" title="Coins: 0" class="col-2" style="font-size: 50px;">🐴</div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+  <section name="scriptTags">
+    <script src="app/main.js" type="module"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"></script>
+
+  </section>
+</body>
+
+</html>

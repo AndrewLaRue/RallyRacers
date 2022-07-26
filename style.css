@@ -1,0 +1,11 @@
+body {
+  background-color: darkred;
+}
+
+.trans {
+  background-color: transparent;
+}
+
+.no-select {
+  user-select: none;
+}
